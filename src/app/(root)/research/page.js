@@ -140,6 +140,34 @@ export default function Research() {
         </section>
 
         <section className="mb-6">
+          <h4 className = "text-lg font-medium mb-2">Correlation Analysis:</h4>
+          <img 
+            src="public/images/research/CorrelationMatrix.png" 
+            alt="Correlation Matrix Heatmap" 
+            className="mb-4 rounded-lg shadow-lg"
+          />
+          <p>
+            According to the correlation matrix, a strong correlation will be defined as greater than or equal to 0.7
+            The following combinations of variables are strongly correlated;
+            (easy_to use , try_buttons)
+            (experience_something, liked_feature)
+            (enjoyed_something, liked_features)
+            (learned_something, experienced_something)
+            (enjoyed_something, experienced_something)
+            (easy_to_use, experienced_something)
+            (enjoyed_something, learned_something)
+            (future, learned_something)
+            (interactive, learned_something)
+          </p>
+
+          <p>
+          As per the purpose of the analysis, we will focus on the correlation(s) with future. To highlight, the strongly related
+          variables to future are interactive, helpful, did_something, enjoyed_something and learned_something. 
+          </p>
+
+        </section>
+
+        <section className="mb-6">
           <h4 className="text-lg font-medium mb-2">Coefficient Analysis:</h4>
           <img 
             src="images/research/survey-results-1.png" 
@@ -170,6 +198,8 @@ export default function Research() {
           As can be seen from the above scatter plot, the residuals tend to be funnel shaped which point to a slightly problematic model.
           </p>
         </section>
+
+        
 
         <section className="mb-6">
           <h3 className="text-xl font-medium mb-2">Conclusion:</h3>
